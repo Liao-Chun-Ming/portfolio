@@ -1,9 +1,6 @@
 <script>
 </script>
 
-
-
-
 <template>
   <nav class="w-full h-auto px-3 sm:px-7 md:px-14 py-4 flex justify-between items-center shadow-md rounded-b-lg"
     id="home">
