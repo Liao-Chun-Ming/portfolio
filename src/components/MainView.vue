@@ -19,7 +19,7 @@
       window.addEventListener("scroll", this.scrollFunction);
     },
     beforeUnmount() {
-    window.removeEventListener("scroll", this.scrollFunction);
+      window.removeEventListener("scroll", this.scrollFunction);
     },
     methods:{
       scrollFunction() {
