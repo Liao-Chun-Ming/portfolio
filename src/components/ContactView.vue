@@ -9,7 +9,7 @@
     >
       <div class="flex items-center justify-center">
         <i class="fa-solid fa-location-dot"></i>
-        <p>：臺中市北屯區</p>
+        <p>：Beitun District,Taichung</p>
       </div>
       <div class="flex items-center justify-center">
         <i class="fa-solid fa-phone"></i>

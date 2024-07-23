@@ -39,8 +39,10 @@ export default {
               >Weather Card</a
             >
             <p class="text-[#fff] text-sm sm:text-base py-3 md:py-4 indent-8">
-              天氣卡使用 Fetch
-              去獲取中央氣氣署的天氣預報資料並加以整理，並展示各縣市目前12小時內的天氣預報在網頁上，使用者點選上方按鈕則可以切換顯示不同地區的天氣。
+              The weather card uses Fetch to obtain and organize weather forecast data from the
+              Central Meteorological Administration, and displays the current 12-hour weather
+              forecast for each county and city on the web page. Users can switch to displaying the
+              weather in different regions by clicking the button above.
             </p>
           </div>
           <div class="flex flex-wrap items-center gap-2 py-1">
@@ -63,8 +65,11 @@ export default {
               >Movies Search</a
             >
             <p class="text-[#fff] text-sm sm:text-base py-3 md:py-4 indent-8">
-              電影搜尋的項目中，我運用了 OMDB API 和 Vue.js
-              ，使用者可以輸入電影名稱及發行年份來搜尋，即可找到相關的電影資訊（上映日期、導演、編劇、演員等），還可以將喜歡的電影加入我的最愛，隨時都可以向別人介紹自己喜歡的電影。
+              In the movie search project, I used OMDB API and Vue.js. Users can enter the movie
+              name and release year to search, and then they can find relevant movie information
+              (release date, director, screenwriter, actors, etc.), and they can also add Add your
+              favorite movies to My Favorites and you can introduce your favorite movies to others
+              at any time.
             </p>
           </div>
           <div class="flex flex-wrap items-center gap-2 py-1">
@@ -87,9 +92,10 @@ export default {
               >Shopping Cart</a
             >
             <p class="text-[#fff] text-sm sm:text-base py-3 md:py-4 indent-8">
-              這是一個用APPLE當主題的購物網站，內容包含登入頁面、首頁及購物車頁面。主要使用 bootsrap
-              搭配 SCSS 和原生
-              javaScript撰寫，透過localStorage將資料儲存在瀏覽器上以便帶到其他頁面，來達成將物品到入到購物車的效果。
+              This is a shopping website with APPLE as the theme, including a login page, homepage
+              and shopping cart page. Mainly written using bootsrap with SCSS and vanilla
+              javaScript, the data is stored in the browser through localStorage so that it can be
+              brought to other pages to achieve the effect of adding items to the shopping cart.
             </p>
           </div>
           <div class="flex flex-wrap items-center gap-2 py-1">
@@ -113,7 +119,10 @@ export default {
               >Color Game</a
             >
             <p class="text-[#fff] text-sm sm:text-base py-3 md:py-4 indent-8">
-              這是一個挑戰眼睛辨識力的遊戲，要點擊到不同顏色的方塊才會進到下一關，答錯則會扣分，越到後面的關卡會越難分辨。
+              This is a game that challenges eye recognition. You have to click on the squares of
+              different colors to advance to the next level. If you answer incorrectly, points will
+              be deducted. The further you go to the later levels, the harder it will be to
+              distinguish them.
             </p>
           </div>
           <div class="flex flex-wrap items-center gap-2 py-1">
