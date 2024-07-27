@@ -22,11 +22,7 @@ export default {
   },
   methods: {
     scrollFunction() {
-      if (window.scrollY > 500) {
-        this.isVisible = true
-      } else {
-        this.isVisible = false
-      }
+      this.isVisible = window.scrollY > 500 ? true : false
     },
     goTop() {
       window.scrollTo({
@@ -50,9 +46,9 @@ export default {
 <template>
   <main class="text-xl bg-[#f5f5f5]">
     <div class="w-5/6 m-auto py-8">
-      <AboutView />
-      <ProjectView />
-      <ContactView />
+      <AboutView ref="about" />
+      <ProjectView ref="projects" />
+      <ContactView ref="contact" />
     </div>
     <button
       type="button"

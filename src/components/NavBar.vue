@@ -1,9 +1,18 @@
-<script></script>
+<script>
+export default {
+  name: 'App',
+  methods: {
+    scrollTo(elementId) {
+      this.$emit('scroll-to', elementId)
+    }
+  }
+}
+</script>
 
 <template>
   <nav
-    class="w-full h-auto px-3 sm:px-7 md:px-14 py-4 flex justify-between items-center shadow-md rounded-b-lg"
-    id="home"
+    class="w-11/12 h-auto px-3 sm:px-7 md:px-10 py-4 mx-auto flex justify-between items-center"
+    ref="home"
   >
     <div class="name text-xl sm:text-3xl">
       <p>From Data To Code</p>
@@ -11,32 +20,28 @@
     <div class="hidden md:block">
       <ul class="flex text-xl gap-4">
         <li>
-          <a
-            href="#home"
-            class="no-underline decoration-slate-400 hover:text-slate-400 hover:underline underline-offset-4 transition-all ease-in duration-200"
-            >Home</a
+          <button
+            @click="scrollTo('about')"
+            class="no-underline decoration-[#577B8D] hover:text-[#577B8D] hover:underline underline-offset-4 transition-all ease-in duration-200"
           >
+            About
+          </button>
         </li>
         <li>
-          <a
-            href="#about"
-            class="no-underline decoration-slate-400 hover:text-slate-400 hover:underline underline-offset-4 transition-all ease-in duration-200"
-            >About</a
+          <button
+            @click="scrollTo('projects')"
+            class="no-underline decoration-[#577B8D] hover:text-[#577B8D] hover:underline underline-offset-4 transition-all ease-in duration-200"
           >
+            Projects
+          </button>
         </li>
         <li>
-          <a
-            href="#projects"
-            class="no-underline decoration-slate-400 hover:text-slate-400 hover:underline underline-offset-4 transition-all ease-in duration-200"
-            >Projects</a
+          <button
+            @click="scrollTo('contact')"
+            class="no-underline decoration-[#577B8D] hover:text-[#577B8D] hover:underline underline-offset-4 transition-all ease-in duration-200"
           >
-        </li>
-        <li>
-          <a
-            href="#contact"
-            class="no-underline decoration-slate-400 hover:text-slate-400 hover:underline underline-offset-4 transition-all ease-in duration-200"
-            >Contact</a
-          >
+            Contact
+          </button>
         </li>
       </ul>
     </div>
@@ -46,12 +51,11 @@
       </div>
       <ul
         tabindex="0"
-        class="menu dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-56 p-2 shadow text-xl"
+        class="menu dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-56 p-2 top-10 shadow text-xl"
       >
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><button @click="scrollTo('about')">About</button></li>
+        <li><button @click="scrollTo('projects')">Projects</button></li>
+        <li><button @click="scrollTo('contact')">Contact</button></li>
       </ul>
     </div>
   </nav>

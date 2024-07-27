@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-  <section id="projects">
+  <section>
     <div class="project-card w-full bg-[#1f1f1f] rounded-xl px-6 py-12 lg:p-12">
       <h2 class="text-white text-4xl font-semibold text-start mb-5">Project Showcase</h2>
       <a
@@ -22,7 +22,7 @@ export default {
         <i class="fa-solid fa-arrow-right mx-2"></i
       ></a>
       <div
-        class="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 justify-center gap-10 text-white"
+        class="w-full grid grid-cols-1 lg:grid-cols-2 3xl:grid-cols-4 justify-center gap-10 text-white"
       >
         <div
           class="px-5 py-8 bg-[#282828] border border-[#484848] rounded-2xl flex flex-col justify-between"
@@ -35,7 +35,7 @@ export default {
             <a
               href="https://monky6503.github.io/weather-Vue-/"
               target="_blank"
-              class="inline-block md:block ml-3 md:ml-0 mt-4 mb-2 text-white text-xl"
+              class="inline-block md:block ml-3 md:ml-0 mt-4 mb-2 text-white text-xl font-semibold"
               >Weather Card</a
             >
             <p class="text-[#fff] text-sm sm:text-base py-3 md:py-4 indent-8">
@@ -61,7 +61,7 @@ export default {
             <a
               href="https://monky6503.github.io/movie-Vue-/"
               target="_blank"
-              class="inline-block md:block ml-3 md:ml-0 mt-4 mb-2 text-white text-xl"
+              class="inline-block md:block ml-3 md:ml-0 mt-4 mb-2 text-white text-xl font-semibold"
               >Movies Search</a
             >
             <p class="text-[#fff] text-sm sm:text-base py-3 md:py-4 indent-8">
@@ -88,7 +88,7 @@ export default {
             <a
               href="https://monky6503.github.io/Shopping-Cart/"
               target="_blank"
-              class="inline-block md:block ml-3 md:ml-0 mt-4 mb-2 text-white text-xl"
+              class="inline-block md:block ml-3 md:ml-0 mt-4 mb-2 text-white text-xl font-semibold"
               >Shopping Cart</a
             >
             <p class="text-[#fff] text-sm sm:text-base py-3 md:py-4 indent-8">

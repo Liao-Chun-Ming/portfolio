@@ -1,7 +1,7 @@
 <script></script>
 
 <template>
-  <section id="contact">
+  <section>
     <h2 class="text-4xl font-semibold text-start pt-10 pb-5">Contact me</h2>
     <h3 class="text-2xl pb-8">Interested in ? You can contact me or follow me</h3>
     <div

@@ -9,12 +9,24 @@ export default {
     HeaderView,
     MainView,
     FooterView
+  },
+  methods: {
+    handleScrollTo(section) {
+      const mainView = this.$refs.mainView
+      if (mainView && mainView.$refs[section]) {
+        const element = mainView.$refs[section]
+        window.scrollTo({
+          top: element.$el.offsetTop,
+          behavior: 'smooth'
+        })
+      }
+    }
   }
 }
 </script>
 <template>
-  <NavBar />
+  <NavBar @scroll-to="handleScrollTo" />
   <HeaderView />
-  <MainView />
-  <FooterView />
+  <MainView ref="mainView" />
+  <FooterView @scroll-to="handleScrollTo" />
 </template>

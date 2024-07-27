@@ -12,6 +12,9 @@ export default {
     getYear() {
       const now = new Date()
       this.year = now.getFullYear()
+    },
+    scrollTo(elementId) {
+      this.$emit('scroll-to', elementId)
     }
   }
 }
@@ -20,26 +23,24 @@ export default {
 <template>
   <footer class="footer footer-center bg-base-200 text-base-content rounded p-10">
     <div class="flex flex-col sm:flex-row justify-between gap-4 text-xl">
-      <a
-        href="#home"
-        class="no-underline decoration-slate-400 hover:text-slate-400 hover:underline underline-offset-4 transition-all ease-in duration-200"
-        >Home</a
+      <button
+        @click="scrollTo('about')"
+        class="no-underline decoration-[#577B8D] hover:text-[#577B8D] hover:underline underline-offset-4 transition-all ease-in duration-200"
       >
-      <a
-        href="#about"
-        class="no-underline decoration-slate-400 hover:text-slate-400 hover:underline underline-offset-4 transition-all ease-in duration-200"
-        >About</a
+        About
+      </button>
+      <button
+        @click="scrollTo('projects')"
+        class="no-underline decoration-[#577B8D] hover:text-[#577B8D] hover:underline underline-offset-4 transition-all ease-in duration-200"
       >
-      <a
-        href="#projects"
-        class="no-underline decoration-slate-400 hover:text-slate-400 hover:underline underline-offset-4 transition-all ease-in duration-200"
-        >Projects</a
+        Projects
+      </button>
+      <button
+        @click="scrollTo('contact')"
+        class="no-underline decoration-[#577B8D] hover:text-[#577B8D] hover:underline underline-offset-4 transition-all ease-in duration-200"
       >
-      <a
-        href="#contact"
-        class="no-underline decoration-slate-400 hover:text-slate-400 hover:underline underline-offset-4 transition-all ease-in duration-200"
-        >Contact</a
-      >
+        Contact
+      </button>
     </div>
     <aside>
       <p>Copyright © {{ year }}- All right reserved</p>
