@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-  <section>
+  <section id="projects">
     <div class="project-card w-full bg-[#1f1f1f] rounded-xl px-6 py-12 lg:p-12">
       <h2 class="text-white text-4xl font-semibold text-start mb-5">Project Showcase</h2>
       <a

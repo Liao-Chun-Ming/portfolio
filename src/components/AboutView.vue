@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-  <section class="mb-10">
+  <section class="mb-10" id="about">
     <h2 class="text-4xl font-semibold text-center pb-8">About</h2>
     <div class="info-card flex flex-wrap justify-center gap-16">
       <div

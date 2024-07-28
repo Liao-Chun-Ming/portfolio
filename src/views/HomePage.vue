@@ -16,7 +16,7 @@ export default {
       if (mainView && mainView.$refs[section]) {
         const element = mainView.$refs[section]
         window.scrollTo({
-          top: element.$el.offsetTop,
+          top: element.$el.offsetTop - 20,
           behavior: 'smooth'
         })
       }
