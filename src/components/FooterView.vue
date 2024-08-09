@@ -1,23 +1,19 @@
-<script>
-export default {
-  data() {
-    return {
-      year: ''
-    }
-  },
-  mounted() {
-    this.getYear()
-  },
-  methods: {
-    getYear() {
-      const now = new Date()
-      this.year = now.getFullYear()
-    },
-    scrollTo(elementId) {
-      this.$emit('scroll-to', elementId)
-    }
-  }
+<script setup>
+import { ref, onMounted, defineEmits } from 'vue'
+const year = ref('')
+
+const getYear = () => {
+  const now = new Date()
+  year.value = now.getFullYear()
 }
+const emit = defineEmits(['scroll-to'])
+
+const scrollTo = (elementId) => {
+  emit('scroll-to', elementId)
+}
+onMounted(() => {
+  getYear()
+})
 </script>
 
 <template>

@@ -1,11 +1,10 @@
-<script>
-export default {
-  name: 'App',
-  methods: {
-    scrollTo(elementId) {
-      this.$emit('scroll-to', elementId)
-    }
-  }
+<script setup>
+import { defineEmits } from 'vue'
+
+const emit = defineEmits(['scroll-to'])
+
+const scrollTo = (elementId) => {
+  emit('scroll-to', elementId)
 }
 </script>
 
