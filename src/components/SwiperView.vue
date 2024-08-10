@@ -1,4 +1,4 @@
-<script>
+<script setup>
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue'
 
@@ -11,29 +11,19 @@ import 'swiper/css/navigation'
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules'
 
-export default {
-  components: {
-    Swiper,
-    SwiperSlide
-  },
-  setup() {
-    return {
-      modules: [Pagination, Navigation]
-    }
-  }
-}
+const modules = [Pagination, Navigation]
 </script>
 
 <template>
   <swiper
     :slidesPerView="3"
-    :spaceBetween="40"
+    :spaceBetween="50"
     :navigation="{
       prevEl: '.swiper-button-prev',
       nextEl: '.swiper-button-next'
     }"
     :modules="modules"
-    class="mySwiper w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 justify-center gap-10 text-white"
+    class="mySwiper w-full flex justify-center gap-10 text-white"
   >
     <swiper-slide>
       <div
@@ -42,7 +32,7 @@ export default {
       >
         <div>
           <i
-            class="fa-solid fa-cloud p-3 text-2xl sm:text-4xl text-white bg-[#303030] border border-[#606060] rounded-xl"
+            class="fa-solid fa-cloud p-3 text-2xl sm:text-4xl bg-[#303030] border border-[#606060] rounded-xl"
           ></i>
           <a
             href="https://monky6503.github.io/weather-Vue-/"
@@ -66,7 +56,6 @@ export default {
     <swiper-slide
       ><div
         class="px-5 py-8 bg-[#282828] border border-[#484848] rounded-2xl flex flex-col justify-between"
-        data-aos="zoom-in"
       >
         <div>
           <i
@@ -94,7 +83,6 @@ export default {
     <swiper-slide
       ><div
         class="px-5 py-8 bg-[#282828] border border-[#484848] rounded-2xl flex flex-col justify-between"
-        data-aos="zoom-in"
       >
         <div>
           <i
@@ -123,7 +111,6 @@ export default {
     <swiper-slide>
       <div
         class="px-5 py-8 bg-[#282828] border border-[#484848] rounded-2xl flex flex-col justify-between"
-        data-aos="zoom-in"
       >
         <div>
           <i
@@ -148,19 +135,15 @@ export default {
         </div>
       </div>
     </swiper-slide>
-    <swiper-slide>Slide 5</swiper-slide>
-    <!-- <swiper-slide>Slide 6</swiper-slide> -->
+
     <div ref="prevButton" class="swiper-button-prev"></div>
     <div ref="nextButton" class="swiper-button-next"></div>
   </swiper>
 </template>
 <style>
-.mySwiper {
-  height: 100%;
-}
 .swiper {
   width: 100%;
-  height: 100%;
+  height: 484px;
   padding: 0 40px;
 }
 
@@ -168,7 +151,6 @@ export default {
   text-align: center;
   font-size: 18px;
   height: 100%;
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;

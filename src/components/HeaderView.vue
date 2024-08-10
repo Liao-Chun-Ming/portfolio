@@ -45,7 +45,7 @@ onMounted(() => {
             ref="paraTwo"
             class="text-base leading-9 sm:text-xl sm:leading-9 indent-10 text-justify tracking-normal"
           >
-            我利用自學和參加培訓，有系統地學習了HTML、CSS和JavaScript，並使用了多個前端框架，如Bootstrap、Tailwind和Vue.js。我透過不斷地練習提升自己的技能，並將所學應用到實際項目中，從中累積開發經驗。
+            我利用自學和參加500小時的培訓，有系統地學習了HTML、CSS和JavaScript，並使用了多個前端框架，如Bootstrap、Tailwind和Vue.js。我透過不斷地練習提升自己的技能，並將所學應用到實際項目中，從中累積開發經驗。
           </p>
         </div>
         <figure class="w-4/6 lg:w-2/5 xl:w-1/3 rounded-xl">

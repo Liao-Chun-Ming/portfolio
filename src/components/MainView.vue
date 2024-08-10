@@ -42,7 +42,6 @@ export default {
   }
 }
 </script>
-
 <template>
   <main class="text-xl bg-[#f5f5f5]">
     <div class="w-5/6 m-auto py-8">
