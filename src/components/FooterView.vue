@@ -17,29 +17,39 @@ onMounted(() => {
 </script>
 
 <template>
-  <footer class="footer footer-center bg-base-200 text-base-content rounded p-10">
+  <footer class="footer footer-center bg-black text-base-content rounded p-10">
     <div class="flex flex-col sm:flex-row justify-between gap-4 text-xl">
-      <button
-        @click="scrollTo('about')"
-        class="no-underline decoration-[#577B8D] hover:text-[#577B8D] hover:underline underline-offset-4 transition-all ease-in duration-200"
-      >
+      <button @click="scrollTo('about')" class="relative inline-block no-underline text-white">
         About
       </button>
-      <button
-        @click="scrollTo('projects')"
-        class="no-underline decoration-[#577B8D] hover:text-[#577B8D] hover:underline underline-offset-4 transition-all ease-in duration-200"
-      >
+      <button @click="scrollTo('projects')" class="relative inline-block no-underline text-white">
         Projects
       </button>
-      <button
-        @click="scrollTo('contact')"
-        class="no-underline decoration-[#577B8D] hover:text-[#577B8D] hover:underline underline-offset-4 transition-all ease-in duration-200"
-      >
+      <button @click="scrollTo('contact')" class="relative inline-block no-underline text-white">
         Contact
       </button>
     </div>
     <aside>
-      <p>Copyright © {{ year }}- All right reserved</p>
+      <p class="text-white">Copyright © {{ year }}- All right reserved</p>
     </aside>
   </footer>
 </template>
+
+<style scoped>
+button:after {
+  background: transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+button:hover:after {
+  width: 100%;
+  left: 0;
+}
+</style>

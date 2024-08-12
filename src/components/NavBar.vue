@@ -13,23 +13,20 @@ const scrollTo = (elementId) => {
     class="w-11/12 h-auto px-3 sm:px-7 md:px-10 py-4 mx-auto flex justify-between items-center"
     ref="home"
   >
-    <div class="name text-xl sm:text-3xl">
+    <div class="name text-white text-xl sm:text-3xl">
       <p>From Data To Code</p>
     </div>
     <div class="hidden md:block">
       <ul class="flex text-xl gap-4">
         <li>
-          <button
-            @click="scrollTo('about')"
-            class="no-underline decoration-[#577B8D] hover:text-[#577B8D] hover:underline underline-offset-4 transition-all ease-in duration-200"
-          >
+          <button @click="scrollTo('about')" class="relative inline-block no-underline text-white">
             About
           </button>
         </li>
         <li>
           <button
             @click="scrollTo('projects')"
-            class="no-underline decoration-[#577B8D] hover:text-[#577B8D] hover:underline underline-offset-4 transition-all ease-in duration-200"
+            class="relative inline-block no-underline text-white"
           >
             Projects
           </button>
@@ -37,7 +34,7 @@ const scrollTo = (elementId) => {
         <li>
           <button
             @click="scrollTo('contact')"
-            class="no-underline decoration-[#577B8D] hover:text-[#577B8D] hover:underline underline-offset-4 transition-all ease-in duration-200"
+            class="relative inline-block no-underline text-white"
           >
             Contact
           </button>
@@ -59,3 +56,22 @@ const scrollTo = (elementId) => {
     </div>
   </nav>
 </template>
+
+<style scoped>
+button:after {
+  background: transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+button:hover:after {
+  width: 100%;
+  left: 0;
+}
+</style>
