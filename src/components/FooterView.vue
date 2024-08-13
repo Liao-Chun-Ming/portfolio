@@ -19,13 +19,22 @@ onMounted(() => {
 <template>
   <footer class="footer footer-center bg-black text-base-content rounded p-10">
     <div class="flex flex-col sm:flex-row justify-between gap-4 text-xl">
-      <button @click="scrollTo('about')" class="relative inline-block no-underline text-white">
+      <button
+        @click="scrollTo('about')"
+        class="relative inline-block no-underline text-white hover:text-[#FF9A00]"
+      >
         About
       </button>
-      <button @click="scrollTo('projects')" class="relative inline-block no-underline text-white">
+      <button
+        @click="scrollTo('projects')"
+        class="relative inline-block no-underline text-white hover:text-[#FF9A00]"
+      >
         Projects
       </button>
-      <button @click="scrollTo('contact')" class="relative inline-block no-underline text-white">
+      <button
+        @click="scrollTo('contact')"
+        class="relative inline-block no-underline text-white hover:text-[#FF9A00]"
+      >
         Contact
       </button>
     </div>
@@ -44,7 +53,7 @@ button:after {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #fff;
+  background: #ff9a00;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }

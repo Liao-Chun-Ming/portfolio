@@ -14,7 +14,7 @@ onMounted(() => {
       <a
         href="https://github.com/monky6503?tab=repositories"
         target="_blank"
-        class="bg-white text-black text-sm rounded-full px-3 py-2 mb-5 inline-flex items-center justify-center gap-2 hover:bg-[#e2e2e2] active:bg-[#aeaeae]"
+        class="relative btn gitbtn border-none bg-white text-black text-sm rounded-full px-3 py-2 mb-5 inline-flex items-center justify-center gap-2 z-10"
       >
         <i class="fa-brands fa-github text-2xl"></i>
         Explore my projects
@@ -133,3 +133,21 @@ onMounted(() => {
     </div>
   </section>
 </template>
+<style scoped>
+.gitbtn::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+  background-color: #ffab3d;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+.gitbtn:hover:after {
+  left: 0;
+  width: 100%;
+}
+</style>
