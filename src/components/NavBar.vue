@@ -43,7 +43,7 @@ const scrollTo = (elementId) => {
     </div>
     <div class="dropdown dropdown-end block md:hidden">
       <div tabindex="0" role="button">
-        <i class="fa-solid fa-bars text-3xl"></i>
+        <i class="fa-solid fa-bars text-3xl text-white"></i>
       </div>
       <ul
         tabindex="0"
