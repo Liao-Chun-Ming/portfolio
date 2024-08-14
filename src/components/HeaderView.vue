@@ -30,7 +30,7 @@ onMounted(() => {
           </h2>
           <p
             ref="paraOne"
-            class="text-base leading-9 sm:text-xl sm:leading-9 indent-10 text-justify tracking-normal"
+            class="text-base leading-9 sm:text-lg sm:leading-7 indent-10 text-justify tracking-normal"
           >
             你好
             ，我是廖春茗，原本在東海大學當研究助理，主要負責校務資料分析、Tableau儀表板製作與維護。偶然接觸到了前端開發，隨著對這個領域的深入了解，我被前端開發的創造性和實踐性吸引，決定轉職成為一名前端開發工程師。
@@ -43,7 +43,7 @@ onMounted(() => {
           </h2>
           <p
             ref="paraTwo"
-            class="text-base leading-9 sm:text-xl sm:leading-9 indent-10 text-justify tracking-normal"
+            class="text-base leading-9 sm:text-lg sm:leading-7 indent-10 text-justify tracking-normal"
           >
             我利用自學和參加500小時的培訓，有系統地學習了HTML、CSS和JavaScript，並使用了多個前端框架，如Bootstrap、Tailwind和Vue.js。我透過不斷地練習提升自己的技能，並將所學應用到實際項目中，從中累積開發經驗。
           </p>

@@ -1,14 +1,11 @@
 <script setup>
-// Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue'
 
-// Import Swiper styles
 import 'swiper/css'
 
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
-// import required modules
 import { Pagination, Navigation } from 'swiper/modules'
 
 const modules = [Pagination, Navigation]
@@ -16,8 +13,8 @@ const modules = [Pagination, Navigation]
 
 <template>
   <swiper
-    :slidesPerView="3"
-    :spaceBetween="50"
+    :slidesPerView="4"
+    :spaceBetween="40"
     :navigation="{
       prevEl: '.swiper-button-prev',
       nextEl: '.swiper-button-next'

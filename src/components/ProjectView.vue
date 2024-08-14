@@ -29,6 +29,33 @@ onMounted(() => {
         >
           <div>
             <i
+              class="fa-solid fa-bus p-3 text-2xl sm:text-4xl bg-[#303030] border border-[#606060] rounded-xl"
+            ></i>
+            <a
+              href="https://monky6503.github.io/colorGame-Vue-/"
+              target="_blank"
+              class="inline-block md:block ml-3 md:ml-0 mt-4 mb-2 text-white text-xl"
+              >Fengyuan Bus Transportation</a
+            >
+            <p class="text-[#fff] text-sm sm:text-base py-3 md:py-4 indent-8">
+              This is a bus transportation website, user can use it to search bus real-time dynamic
+              information ,We also have recommended attractions for everyone, all of which can be
+              reached via our buses.
+            </p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2 py-1">
+            <div class="badge badge-outline text-[#38BDF8] text-xs">Tailwind</div>
+            <div class="badge badge-outline text-[#42B883] text-xs">Vue</div>
+            <div class="badge badge-outline text-[#0180FF] text-xs">Swiper</div>
+            <div class="badge badge-outline text-[#08E447] text-xs">GSAP</div>
+          </div>
+        </div>
+        <div
+          class="px-5 py-8 bg-[#282828] border border-[#484848] rounded-2xl flex flex-col justify-between"
+          data-aos="zoom-in"
+        >
+          <div>
+            <i
               class="fa-solid fa-cloud p-3 text-2xl sm:text-4xl bg-[#303030] border border-[#606060] rounded-xl"
             ></i>
             <a
@@ -67,8 +94,7 @@ onMounted(() => {
               In the movie search project, I used OMDB API and Vue.js. Users can enter the movie
               name and release year to search, and then they can find relevant movie information
               (release date, director, screenwriter, actors, etc.), and they can also add Add your
-              favorite movies to My Favorites and you can introduce your favorite movies to others
-              at any time.
+              favorite movies to My Favorites and you can introduce your favorite movies to others.
             </p>
           </div>
           <div class="flex flex-wrap items-center gap-2 py-1">

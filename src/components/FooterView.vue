@@ -39,7 +39,7 @@ onMounted(() => {
       </button>
     </div>
     <aside>
-      <p class="text-white">Copyright © {{ year }}- All right reserved</p>
+      <p class="text-white">Copyright © {{ year }} ChunMing - All right reserved</p>
     </aside>
   </footer>
 </template>
