@@ -142,7 +142,7 @@ onMounted(() => {
   top: 0;
   left: 50%;
   z-index: -1;
-  background-color: #ffab3d;
+  background-color: #3abef9;
   border-radius: 9999px;
   transition: all 0.3s ease;
 }

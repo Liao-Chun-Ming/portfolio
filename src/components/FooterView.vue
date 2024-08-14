@@ -21,19 +21,19 @@ onMounted(() => {
     <div class="flex flex-col sm:flex-row justify-between gap-4 text-xl">
       <button
         @click="scrollTo('about')"
-        class="relative inline-block no-underline text-white hover:text-[#FF9A00]"
+        class="relative inline-block no-underline text-white hover:text-[#3ABEF9]"
       >
         About
       </button>
       <button
         @click="scrollTo('projects')"
-        class="relative inline-block no-underline text-white hover:text-[#FF9A00]"
+        class="relative inline-block no-underline text-white hover:text-[#3ABEF9]"
       >
         Projects
       </button>
       <button
         @click="scrollTo('contact')"
-        class="relative inline-block no-underline text-white hover:text-[#FF9A00]"
+        class="relative inline-block no-underline text-white hover:text-[#3ABEF9]"
       >
         Contact
       </button>
@@ -53,7 +53,7 @@ button:after {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #ff9a00;
+  background: #3abef9;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }

@@ -21,7 +21,7 @@ const scrollTo = (elementId) => {
           <li>
             <button
               @click="scrollTo('about')"
-              class="relative inline-block no-underline text-white hover:text-[#FF9A00]"
+              class="relative inline-block no-underline text-white hover:text-[#3ABEF9]"
             >
               About
             </button>
@@ -29,7 +29,7 @@ const scrollTo = (elementId) => {
           <li>
             <button
               @click="scrollTo('projects')"
-              class="relative inline-block no-underline text-white hover:text-[#FF9A00]"
+              class="relative inline-block no-underline text-white hover:text-[#3ABEF9]"
             >
               Projects
             </button>
@@ -37,7 +37,7 @@ const scrollTo = (elementId) => {
           <li>
             <button
               @click="scrollTo('contact')"
-              class="relative inline-block no-underline text-white hover:text-[#FF9A00]"
+              class="relative inline-block no-underline text-white hover:text-[#3ABEF9]"
             >
               Contact
             </button>
@@ -55,7 +55,7 @@ const scrollTo = (elementId) => {
           <li>
             <button
               @click="scrollTo('about')"
-              class="btn bg-white border-none shadow-none justify-start text-xl font-normal hover:bg-[#ff9a00] after:!hidden"
+              class="btn bg-white border-none shadow-none justify-start text-xl font-normal hover:bg-[#3ABEF9] after:!hidden"
             >
               About
             </button>
@@ -63,7 +63,7 @@ const scrollTo = (elementId) => {
           <li>
             <button
               @click="scrollTo('projects')"
-              class="btn bg-white border-none shadow-none justify-start text-xl font-normal hover:bg-[#ff9a00] after:!hidden"
+              class="btn bg-white border-none shadow-none justify-start text-xl font-normal hover:bg-[#3ABEF9] after:!hidden"
             >
               Projects
             </button>
@@ -71,7 +71,7 @@ const scrollTo = (elementId) => {
           <li>
             <button
               @click="scrollTo('contact')"
-              class="btn bg-white border-none shadow-none justify-start text-xl font-normal hover:bg-[#ff9a00] after:!hidden"
+              class="btn bg-white border-none shadow-none justify-start text-xl font-normal hover:bg-[#3ABEF9] after:!hidden"
             >
               Contact
             </button>
@@ -91,7 +91,7 @@ button:after {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #ff9a00;
+  background: #3abef9;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
