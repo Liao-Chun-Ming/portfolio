@@ -2,6 +2,68 @@
 import { onMounted } from 'vue'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+
+const projectdata = [
+  {
+    name: 'Fengyuan Bus Transportation',
+    intro:
+      'This is a bus transportation website, user can use it to search bus real-time dynamic information ,We also have recommended attractions for everyone, all of which can be reached via our buses.',
+    url: 'https://fcu-11304-fengyuanbus.dev-hub.io/',
+    icon: 'fa-bus',
+    hashtag: [
+      { package: 'Tailwind', color: '#38BDF8' },
+      { package: 'Vue', color: '#42B883' },
+      { package: 'Swiper', color: '#0180FF' },
+      { package: 'GSAP', color: '#08E447' }
+    ]
+  },
+  {
+    name: 'Weather Card',
+    intro:
+      'The weather card uses Fetch to obtain and organize weather forecast data from the Central Meteorological Administration, and displays the current 12-hour weather forecast for each county and city on the web page. Users can switch to displaying the weather in different regions by clicking the button above.',
+    url: 'https://monky6503.github.io/weather-Vue-/',
+    icon: 'fa-cloud',
+    hashtag: [
+      { package: 'Tailwind', color: '#38BDF8' },
+      { package: 'Vue', color: '#42B883' }
+    ]
+  },
+  {
+    name: 'Movie Search',
+    intro:
+      'In the movie search project, I used OMDB API and Vue.js. Users can enter the movie name and release year to search, and then they can find relevant movie information (release date, director, screenwriter, actors, etc.), and they can also add Add your favorite movies to My Favorites and you can introduce your favorite movies to others.',
+    url: 'https://monky6503.github.io/movie-Vue-/',
+    icon: 'fa-film',
+    hashtag: [
+      { package: 'Tailwind', color: '#38BDF8' },
+      { package: 'Vue', color: '#42B883' }
+    ]
+  },
+  {
+    name: 'Shopping Cart',
+    intro:
+      'This is a shopping website with APPLE as the theme, including a login page, homepage and shopping cart page. Mainly written using bootsrap with SCSS and vanilla javaScript, the data is stored in the browser through localStorage so that it can be brought to other pages to achieve the effect of adding items to the shopping cart.',
+    url: 'https://monky6503.github.io/Shopping-Cart/',
+    icon: 'fa-cart-shopping',
+    hashtag: [
+      { package: 'Bootstrap', color: '#b57dff' },
+      { package: 'SCSS', color: '#f84600' },
+      { package: 'JavaScript', color: '#F8D900' }
+    ]
+  },
+  {
+    name: 'Color Game',
+    intro:
+      'This is a game that challenges eye recognition. You have to click on the squares of different colors to advance to the next level. If you answer incorrectly, points will be deducted. The further you go to the later levels, the harder it will be to distinguish them.',
+    url: 'https://monky6503.github.io/colorGame-Vue-/',
+    icon: 'fa-palette',
+    hashtag: [
+      { package: 'Tailwind', color: '#38BDF8' },
+      { package: 'Vue', color: '#42B883' }
+    ]
+  }
+]
+
 onMounted(() => {
   AOS.init()
 })
@@ -24,135 +86,35 @@ onMounted(() => {
         class="w-full grid grid-cols-1 lg:grid-cols-2 3xl:grid-cols-4 justify-center gap-10 text-white"
       >
         <div
+          v-for="(item, index) in projectdata"
+          :key="index"
           class="px-5 py-8 bg-[#282828] border border-[#484848] rounded-2xl flex flex-col justify-between"
           data-aos="zoom-in"
         >
           <div>
             <i
-              class="fa-solid fa-bus p-3 text-2xl sm:text-4xl bg-[#303030] border border-[#606060] rounded-xl"
+              class="fa-solid p-3 text-2xl sm:text-4xl bg-[#303030] border border-[#606060] rounded-xl"
+              :class="item.icon"
             ></i>
             <a
-              href="https://fcu-11304-fengyuanbus.dev-hub.io/"
+              :href="item.url"
               target="_blank"
-              class="inline-block md:block ml-3 md:ml-0 mt-4 mb-2 text-white text-xl"
-              >Fengyuan Bus Transportation</a
+              class="inline-block md:block ml-3 md:ml-0 mt-4 mb-2 text-white text-xl hover:text-[#ff8800]"
+              >{{ item.name }}</a
             >
             <p class="text-[#fff] text-sm sm:text-base py-3 md:py-4 indent-8">
-              This is a bus transportation website, user can use it to search bus real-time dynamic
-              information ,We also have recommended attractions for everyone, all of which can be
-              reached via our buses.
+              {{ item.intro }}
             </p>
           </div>
           <div class="flex flex-wrap items-center gap-2 py-1">
-            <div class="badge badge-outline text-[#38BDF8] text-xs">Tailwind</div>
-            <div class="badge badge-outline text-[#42B883] text-xs">Vue</div>
-            <div class="badge badge-outline text-[#0180FF] text-xs">Swiper</div>
-            <div class="badge badge-outline text-[#08E447] text-xs">GSAP</div>
-          </div>
-        </div>
-        <div
-          class="px-5 py-8 bg-[#282828] border border-[#484848] rounded-2xl flex flex-col justify-between"
-          data-aos="zoom-in"
-        >
-          <div>
-            <i
-              class="fa-solid fa-cloud p-3 text-2xl sm:text-4xl bg-[#303030] border border-[#606060] rounded-xl"
-            ></i>
-            <a
-              href="https://monky6503.github.io/weather-Vue-/"
-              target="_blank"
-              class="inline-block md:block ml-3 md:ml-0 mt-4 mb-2 text-white text-xl font-semibold"
-              >Weather Card</a
+            <div
+              v-for="(pkg, index) in item.hashtag"
+              :key="index"
+              class="badge badge-outline text-xs"
+              :class="`text-[${pkg.color}]`"
             >
-            <p class="text-[#fff] text-sm sm:text-base py-3 md:py-4 indent-8">
-              The weather card uses Fetch to obtain and organize weather forecast data from the
-              Central Meteorological Administration, and displays the current 12-hour weather
-              forecast for each county and city on the web page. Users can switch to displaying the
-              weather in different regions by clicking the button above.
-            </p>
-          </div>
-          <div class="flex flex-wrap items-center gap-2 py-1">
-            <div class="badge badge-outline text-[#38BDF8] text-xs">Tailwind</div>
-            <div class="badge badge-outline text-[#42B883] text-xs">Vue</div>
-          </div>
-        </div>
-        <div
-          class="px-5 py-8 bg-[#282828] border border-[#484848] rounded-2xl flex flex-col justify-between"
-          data-aos="zoom-in"
-        >
-          <div>
-            <i
-              class="fa-solid fa-film p-3 text-2xl sm:text-4xl bg-[#303030] border border-[#606060] rounded-xl"
-            ></i>
-            <a
-              href="https://monky6503.github.io/movie-Vue-/"
-              target="_blank"
-              class="inline-block md:block ml-3 md:ml-0 mt-4 mb-2 text-white text-xl font-semibold"
-              >Movies Search</a
-            >
-            <p class="text-[#fff] text-sm sm:text-base py-3 md:py-4 indent-8">
-              In the movie search project, I used OMDB API and Vue.js. Users can enter the movie
-              name and release year to search, and then they can find relevant movie information
-              (release date, director, screenwriter, actors, etc.), and they can also add Add your
-              favorite movies to My Favorites and you can introduce your favorite movies to others.
-            </p>
-          </div>
-          <div class="flex flex-wrap items-center gap-2 py-1">
-            <div class="badge badge-outline text-[#38BDF8] text-xs">Tailwind</div>
-            <div class="badge badge-outline text-[#42B883] text-xs">Vue</div>
-          </div>
-        </div>
-        <div
-          class="px-5 py-8 bg-[#282828] border border-[#484848] rounded-2xl flex flex-col justify-between"
-          data-aos="zoom-in"
-        >
-          <div>
-            <i
-              class="fa-solid fa-cart-shopping p-3 text-2xl sm:text-4xl bg-[#303030] border border-[#606060] rounded-xl"
-            ></i>
-            <a
-              href="https://monky6503.github.io/Shopping-Cart/"
-              target="_blank"
-              class="inline-block md:block ml-3 md:ml-0 mt-4 mb-2 text-white text-xl font-semibold"
-              >Shopping Cart</a
-            >
-            <p class="text-[#fff] text-sm sm:text-base py-3 md:py-4 indent-8">
-              This is a shopping website with APPLE as the theme, including a login page, homepage
-              and shopping cart page. Mainly written using bootsrap with SCSS and vanilla
-              javaScript, the data is stored in the browser through localStorage so that it can be
-              brought to other pages to achieve the effect of adding items to the shopping cart.
-            </p>
-          </div>
-          <div class="flex flex-wrap items-center gap-2 py-1">
-            <div class="badge badge-outline text-[#b57dff] text-xs">Bootstrap</div>
-            <div class="badge badge-outline text-[#f84600] text-xs">SCSS</div>
-            <div class="badge badge-outline text-[#F8D900] text-xs">JavaScript</div>
-          </div>
-        </div>
-        <div
-          class="px-5 py-8 bg-[#282828] border border-[#484848] rounded-2xl flex flex-col justify-between"
-          data-aos="zoom-in"
-        >
-          <div>
-            <i
-              class="fa-solid fa-palette p-3 text-2xl sm:text-4xl bg-[#303030] border border-[#606060] rounded-xl"
-            ></i>
-            <a
-              href="https://monky6503.github.io/colorGame-Vue-/"
-              target="_blank"
-              class="inline-block md:block ml-3 md:ml-0 mt-4 mb-2 text-white text-xl"
-              >Color Game</a
-            >
-            <p class="text-[#fff] text-sm sm:text-base py-3 md:py-4 indent-8">
-              This is a game that challenges eye recognition. You have to click on the squares of
-              different colors to advance to the next level. If you answer incorrectly, points will
-              be deducted. The further you go to the later levels, the harder it will be to
-              distinguish them.
-            </p>
-          </div>
-          <div class="flex flex-wrap items-center gap-2 py-1">
-            <div class="badge badge-outline text-[#38BDF8] text-xs">Tailwind</div>
-            <div class="badge badge-outline text-[#42B883] text-xs">Vue</div>
+              {{ pkg.package }}
+            </div>
           </div>
         </div>
       </div>
