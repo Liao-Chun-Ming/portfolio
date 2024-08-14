@@ -32,7 +32,7 @@ onMounted(() => {
               class="fa-solid fa-bus p-3 text-2xl sm:text-4xl bg-[#303030] border border-[#606060] rounded-xl"
             ></i>
             <a
-              href="https://monky6503.github.io/colorGame-Vue-/"
+              href="https://fcu-11304-fengyuanbus.dev-hub.io/"
               target="_blank"
               class="inline-block md:block ml-3 md:ml-0 mt-4 mb-2 text-white text-xl"
               >Fengyuan Bus Transportation</a
