@@ -33,8 +33,8 @@ const copyEmail = () => {
 <template>
   <section id="contact">
     <h2 class="text-4xl font-semibold text-start pt-10 pb-5">Contact me</h2>
-    <h3 class="text-2xl">Interested in ? You can contact me or follow me.</h3>
-    <h3 class="text-2xl pb-8">Let we work together!!</h3>
+    <h3 class="text-2xl">Interested In ? You can contact me or follow me.</h3>
+    <h3 class="text-2xl pb-8">Let's work together!!</h3>
     <div
       class="flex flex-col lg:flex-row flex-wrap items-start lg:items-center py-5 gap-5 lg:gap-10 text-lg sm:text-xl"
     >
