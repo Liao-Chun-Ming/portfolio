@@ -120,6 +120,8 @@ onMounted(() => {
       </div>
     </div>
   </section>
+  <p class="text-[#0180FF] hidden"></p>
+  <p class="text-[#08E447] hidden"></p>
 </template>
 <style scoped>
 .gitbtn::after {
