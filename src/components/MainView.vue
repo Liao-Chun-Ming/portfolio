@@ -41,9 +41,9 @@ onBeforeUnmount(() => {
 <template>
   <main class="text-xl bg-[#f5f5f5]">
     <div class="w-5/6 m-auto py-8">
-      <AboutView ref="about" />
-      <ProjectView ref="projects" />
-      <ContactView ref="contact" />
+      <AboutView />
+      <ProjectView />
+      <ContactView />
     </div>
     <button
       type="button"

@@ -1,10 +1,10 @@
 <script setup>
 // import { defineEmits } from 'vue'
-
-const emit = defineEmits(['scroll-to'])
-
-const scrollTo = (elementId) => {
-  emit('scroll-to', elementId)
+import { gsap } from 'gsap'
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
+const scrollTo = (select) => {
+  gsap.registerPlugin(ScrollToPlugin)
+  gsap.to(window, { duration: 1, scrollTo: { y: '#' + select, offsetY: 30 } })
 }
 </script>
 

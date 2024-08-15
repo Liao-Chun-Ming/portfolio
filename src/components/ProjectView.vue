@@ -111,7 +111,7 @@ onMounted(() => {
               v-for="(pkg, index) in item.hashtag"
               :key="index"
               class="badge badge-outline text-xs"
-              :class="`text-[${pkg.color}]`"
+              :style="`color:${pkg.color}`"
             >
               {{ pkg.package }}
             </div>
@@ -120,8 +120,6 @@ onMounted(() => {
       </div>
     </div>
   </section>
-  <p class="text-[#0180FF] hidden"></p>
-  <p class="text-[#08E447] hidden"></p>
 </template>
 <style scoped>
 .gitbtn::after {
