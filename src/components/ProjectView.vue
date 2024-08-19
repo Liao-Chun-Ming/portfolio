@@ -61,6 +61,16 @@ const projectdata = [
       { package: 'Tailwind', color: '#38BDF8' },
       { package: 'Vue', color: '#42B883' }
     ]
+  },
+  {
+    name: 'Calendar',
+    intro: 'A Calendar that you can add/remove some events on the date.',
+    url: 'https://monky6503.github.io/Calendar/',
+    icon: 'fa-calendar',
+    hashtag: [
+      { package: 'Tailwind', color: '#38BDF8' },
+      { package: 'Vue', color: '#42B883' }
+    ]
   }
 ]
 
