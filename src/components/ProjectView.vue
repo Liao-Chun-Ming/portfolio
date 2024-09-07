@@ -40,7 +40,7 @@ const projectdata = [
     ]
   },
   {
-    name: 'Shopping Cart',
+    name: 'E-commerce',
     intro:
       'This is a shopping website with APPLE as the theme, including a login page, homepage and shopping cart page. Mainly written using bootsrap with SCSS and vanilla javaScript, the data is stored in the browser through localStorage so that it can be brought to other pages to achieve the effect of adding items to the shopping cart.',
     url: 'https://monky6503.github.io/Shopping-Cart/',
