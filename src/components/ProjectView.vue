@@ -8,7 +8,7 @@ const projectdata = [
     name: 'Fengyuan Bus Transportation',
     intro:
       'This is a bus transportation website, user can use it to search bus real-time dynamic information ,We also have recommended attractions for everyone, all of which can be reached via our buses.',
-    url: 'https://fcu-11304-fengyuanbus.dev-hub.io/',
+    url: 'https://monky6503.github.io/FengYuanBus/',
     icon: 'fa-bus',
     hashtag: [
       { package: 'Tailwind', color: '#38BDF8' },
