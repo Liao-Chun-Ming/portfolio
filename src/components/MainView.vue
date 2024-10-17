@@ -1,8 +1,8 @@
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
-import AboutView from '../components/AboutView.vue'
-import ProjectView from '../components/ProjectView.vue'
-import ContactView from '../components/ContactView.vue'
+import { ref, onMounted } from 'vue'
+import AboutView from '@/components/AboutView.vue'
+import ProjectView from '@/components/ProjectView.vue'
+import ContactView from '@/components/ContactView.vue'
 import lottie from 'lottie-web'
 
 const isVisible = ref(false)
@@ -32,14 +32,10 @@ onMounted(() => {
   loadAnimation(goTopRef)
   window.addEventListener('scroll', scrollFunction)
 })
-
-onBeforeUnmount(() => {
-  window.removeEventListener('scroll', scrollFunction)
-})
 </script>
 
 <template>
-  <main class="text-xl bg-[#f5f5f5]">
+  <main class="bg-[#f5f5f5]">
     <div class="w-5/6 m-auto py-8">
       <AboutView />
       <ProjectView />

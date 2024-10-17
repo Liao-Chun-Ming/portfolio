@@ -9,7 +9,7 @@ const scrollTo = (select) => {
 </script>
 
 <template>
-  <nav ref="home" class="bg-gradient-to-b from-[#283048] to-[#434343]">
+  <nav ref="home" class="bg-[#141625]">
     <div
       class="w-11/12 h-auto px-3 sm:px-7 md:px-10 py-4 mx-auto flex justify-between items-center"
     >
@@ -17,11 +17,11 @@ const scrollTo = (select) => {
         <p>From Data To Code</p>
       </div>
       <div class="hidden md:block">
-        <ul class="flex text-xl gap-4">
+        <ul class="flex text-xl gap-4 text-white">
           <li>
             <button
               @click="scrollTo('about')"
-              class="relative inline-block no-underline text-white hover:text-[#3ABEF9]"
+              class="relative inline-block no-underline hover:text-[#3ABEF9]"
             >
               About
             </button>
@@ -29,7 +29,7 @@ const scrollTo = (select) => {
           <li>
             <button
               @click="scrollTo('projects')"
-              class="relative inline-block no-underline text-white hover:text-[#3ABEF9]"
+              class="relative inline-block no-underline hover:text-[#3ABEF9]"
             >
               Projects
             </button>
@@ -37,7 +37,7 @@ const scrollTo = (select) => {
           <li>
             <button
               @click="scrollTo('contact')"
-              class="relative inline-block no-underline text-white hover:text-[#3ABEF9]"
+              class="relative inline-block no-underline hover:text-[#3ABEF9]"
             >
               Contact
             </button>

@@ -1,12 +1,10 @@
 <script setup>
-import NavBar from '../components/NavBar.vue'
-import HeaderView from '../components/HeaderView.vue'
-import MainView from '../components/MainView.vue'
-import FooterView from '../components/FooterView.vue'
+import HeaderView from '@/components/HeaderView.vue'
+import MainView from '@/components/MainView.vue'
 </script>
 <template>
-  <NavBar />
-  <HeaderView />
+  <div class="bg-gradient-to-tr from-[#536976] to-[#292E49]">
+    <HeaderView />
+  </div>
   <MainView />
-  <FooterView />
 </template>

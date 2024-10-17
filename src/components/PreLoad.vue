@@ -4,7 +4,7 @@ import { ref, onMounted } from 'vue'
 const counter = ref(0)
 const percent = ref(0)
 const interValid = ref(null)
-const isLoading = ref(true)
+// const isLoading = ref(true)s
 
 const startCounter = () => {
   interValid.value = setInterval(() => {
@@ -13,20 +13,15 @@ const startCounter = () => {
     if (counter.value === 101) {
       clearInterval(interValid.value)
     }
-  }, 25)
+  }, 15)
 }
 
 onMounted(() => {
   startCounter()
-  window.addEventListener('load', function () {
-    setTimeout(function () {
-      isLoading.value = false
-    }, 2600)
-  })
 })
 </script>
 <template>
-  <div class="preload" v-if="isLoading">
+  <div class="preload">
     <div class="counter">
       <p>Loading</p>
       <h1>{{ percent }}%</h1>
@@ -62,22 +57,11 @@ onMounted(() => {
 .preload .counter hr {
   background: #f60d54;
   border: none;
-  height: 1px;
+  height: 15px;
 }
 
 .preload .counter {
   position: relative;
   width: 200px;
 }
-
-/* .preload .counter h1.abs {
-  position: absolute;
-  top: 0%;
-  width: 100%;
-} */
-/* .preload .counter .color {
-  width: 0px;
-  overflow: hidden;
-  color: #f60d54;
-} */
 </style>

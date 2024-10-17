@@ -109,7 +109,7 @@ onMounted(() => {
             <a
               :href="item.url"
               target="_blank"
-              class="inline-block md:block ml-3 md:ml-0 mt-4 mb-2 text-white text-xl hover:text-[#ff8800]"
+              class="inline-block md:block ml-3 md:ml-0 mt-4 mb-2 text-xl text-white hover:text-[#ff8800] transition-all ease-in-out duration-300"
               >{{ item.name }}</a
             >
             <p class="text-[#fff] text-sm sm:text-base py-3 md:py-4 indent-8">
@@ -144,7 +144,7 @@ onMounted(() => {
   border-radius: 9999px;
   transition: all 0.3s ease;
 }
-.gitbtn:hover:after {
+.gitbtn:hover::after {
   left: 0;
   width: 100%;
 }

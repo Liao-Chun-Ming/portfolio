@@ -20,7 +20,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <footer class="footer footer-center bg-black text-base-content rounded p-10">
+  <footer class="footer footer-center bg-black text-base-content rounded p-4">
     <div class="flex flex-col sm:flex-row justify-between gap-4 text-xl">
       <button
         @click="scrollTo('about')"

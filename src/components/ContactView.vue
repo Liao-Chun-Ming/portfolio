@@ -1,16 +1,14 @@
 <script setup>
-import { ref } from 'vue'
 import Swal from 'sweetalert2'
-const email = ref('chunmingliao1018@gmail.com')
-const copyEmail = () => {
+const copyEmail = (e) => {
   if (navigator.clipboard) {
     navigator.clipboard
-      .writeText(email.value)
+      .writeText(e.target.innerText)
       .then(() => {
         Swal.fire({
           icon: 'success',
           title: 'Copied!!',
-          text: email.value
+          text: e.target.innerText
         })
       })
       .catch((error) => {
@@ -44,7 +42,9 @@ const copyEmail = () => {
       </div>
       <div class="flex items-center justify-center">
         <i class="fa-solid fa-envelope"></i>
-        <p id="email" @click="copyEmail" class="cursor-pointer">：{{ email }}</p>
+        <p id="email" class="cursor-pointer">
+          ：<span @click="copyEmail">chunmingliao1018@gmail.com</span>
+        </p>
       </div>
       <div class="flex items-center justify-center">
         <i class="fa-brands fa-github"></i>
