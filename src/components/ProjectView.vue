@@ -11,8 +11,8 @@ const projectdata = [
     url: 'https://monky6503.github.io/FengYuanBus/',
     icon: 'fa-bus',
     hashtag: [
+      { package: 'Vue.js', color: '#42B883' },
       { package: 'Tailwind', color: '#38BDF8' },
-      { package: 'Vue', color: '#42B883' },
       { package: 'Swiper', color: '#0180FF' },
       { package: 'GSAP', color: '#08E447' }
     ]
@@ -24,8 +24,8 @@ const projectdata = [
     url: 'https://monky6503.github.io/weather-Vue-/',
     icon: 'fa-cloud',
     hashtag: [
-      { package: 'Tailwind', color: '#38BDF8' },
-      { package: 'Vue', color: '#42B883' }
+      { package: 'Vue.js', color: '#42B883' },
+      { package: 'Tailwind', color: '#38BDF8' }
     ]
   },
   {
@@ -35,8 +35,8 @@ const projectdata = [
     url: 'https://monky6503.github.io/movie-Vue-/',
     icon: 'fa-film',
     hashtag: [
-      { package: 'Tailwind', color: '#38BDF8' },
-      { package: 'Vue', color: '#42B883' }
+      { package: 'Vue.js', color: '#42B883' },
+      { package: 'Tailwind', color: '#38BDF8' }
     ]
   },
   {
@@ -46,9 +46,9 @@ const projectdata = [
     url: 'https://monky6503.github.io/Shopping-Cart/',
     icon: 'fa-cart-shopping',
     hashtag: [
+      { package: 'JavaScript', color: '#F8D900' },
       { package: 'Bootstrap', color: '#b57dff' },
-      { package: 'SCSS', color: '#f84600' },
-      { package: 'JavaScript', color: '#F8D900' }
+      { package: 'SCSS', color: '#f84600' }
     ]
   },
   {
@@ -58,18 +58,20 @@ const projectdata = [
     url: 'https://monky6503.github.io/colorGame-Vue-/',
     icon: 'fa-palette',
     hashtag: [
-      { package: 'Tailwind', color: '#38BDF8' },
-      { package: 'Vue', color: '#42B883' }
+      { package: 'Vue.js', color: '#42B883' },
+      { package: 'Tailwind', color: '#38BDF8' }
     ]
   },
   {
     name: 'Calendar',
-    intro: 'A Calendar that you can add/remove some events on the date.',
+    intro:
+      'Calendar using firebase to store data, allowing users to perform CRUD operations on selected dates.',
     url: 'https://monky6503.github.io/Calendar/',
     icon: 'fa-calendar',
     hashtag: [
+      { package: 'Vue.js', color: '#42B883' },
       { package: 'Tailwind', color: '#38BDF8' },
-      { package: 'Vue', color: '#42B883' }
+      { package: 'Firebase', color: '#DD2C00' }
     ]
   }
 ]
