@@ -45,7 +45,7 @@ onMounted(() => {
       type="button"
       ref="goTopRef"
       @click="goTop"
-      class="w-14 h-14 bg-black rounded-full sticky bottom-0 -translate-y-1/2 transition-all linear duration-500"
+      class="w-14 h-14 bg-black rounded-full sticky bottom-0 -translate-y-1/2 transition-all linear duration-500 shadow-[0_5px_29px_5px_rgba(0,0,0,0.3)]"
       :class="isVisible ? 'left-[95%] -translate-x-[10%]' : 'left-full translate-x-full'"
     ></button>
   </main>
