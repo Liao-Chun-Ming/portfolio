@@ -38,8 +38,8 @@ onMounted(() => {
         </h2>
         <p ref="paraTwo" class="text-base text-black leading-9 sm:text-xl sm:leading-7 indent-10">
           I mainly use Vue.js to develop web pages, and use the Tailwind CSS framework、Pinia to
-          manage states、Git for version control and Firebase for store the data.Now, I'm currently
-          learning the Nuxt.js framework by myself.
+          manage states、Git for version control and Firebase for store the data.I will continue to
+          learn in the future.
         </p>
       </div>
       <figure class="w-4/6 lg:w-2/5 xl:w-1/3 rounded-xl">
