@@ -25,6 +25,9 @@ export default {
     extend: {
       fontFamily: {
         Inter: ['Inter']
+      },
+      backgroundImage: {
+        darkBg: "url('/dark-bg.jpg')"
       }
     }
   },
