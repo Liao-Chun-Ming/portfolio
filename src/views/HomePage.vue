@@ -4,7 +4,7 @@ import MainView from '@/components/MainView.vue'
 </script>
 
 <template>
-  <header class="bg-gradient-to-tr from-[#536976] to-[#292E49]">
+  <header class="bg-[#141625]">
     <HeaderView />
   </header>
   <MainView />

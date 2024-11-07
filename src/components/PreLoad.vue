@@ -4,7 +4,6 @@ import { ref, onMounted } from 'vue'
 const counter = ref(0)
 const percent = ref(0)
 const interValid = ref(null)
-// const isLoading = ref(true)s
 
 const startCounter = () => {
   interValid.value = setInterval(() => {

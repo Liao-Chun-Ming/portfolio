@@ -54,14 +54,11 @@ button:after {
   content: '';
   display: block;
   height: 2px;
-  left: 50%;
-  position: absolute;
+  transform: scaleX(0);
   background: #3abef9;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
+  transition: transform 0.3s ease-in-out;
 }
 button:hover:after {
-  width: 100%;
-  left: 0;
+  transform: scaleX(1);
 }
 </style>
