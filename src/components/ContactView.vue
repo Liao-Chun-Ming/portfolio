@@ -48,7 +48,7 @@ const copyEmail = (e) => {
       </div>
       <div class="flex items-center justify-center">
         <i class="fa-brands fa-github"></i>
-        <p>：<a href="https://github.com/monky6503" target="_blank">My Github</a></p>
+        <p>：<a href="https://github.com/Liao-Chun-Ming" target="_blank">My Github</a></p>
       </div>
       <div class="flex items-center justify-center">
         <i class="fa-brands fa-linkedin"></i>
