@@ -47,7 +47,7 @@ onMounted(() => {
           <li>
             <button
               @click="scrollTo('about')"
-              class="relative inline-block no-underline hover:text-[#3ABEF9]"
+              class="nav-item relative inline-block no-underline hover:text-[#3ABEF9]"
             >
               About
             </button>
@@ -55,7 +55,7 @@ onMounted(() => {
           <li>
             <button
               @click="scrollTo('projects')"
-              class="relative inline-block no-underline hover:text-[#3ABEF9]"
+              class="nav-item relative inline-block no-underline hover:text-[#3ABEF9]"
             >
               Projects
             </button>
@@ -63,7 +63,7 @@ onMounted(() => {
           <li>
             <button
               @click="scrollTo('contact')"
-              class="relative inline-block no-underline hover:text-[#3ABEF9]"
+              class="nav-item relative inline-block no-underline hover:text-[#3ABEF9]"
             >
               Contact
             </button>
@@ -87,7 +87,7 @@ onMounted(() => {
             <li>
               <button
                 @click="scrollTo('about')"
-                class="relative inline-block no-underline hover:text-[#3ABEF9]"
+                class="nav-item relative inline-block no-underline hover:text-[#3ABEF9]"
               >
                 About
               </button>
@@ -95,7 +95,7 @@ onMounted(() => {
             <li>
               <button
                 @click="scrollTo('projects')"
-                class="relative inline-block no-underline hover:text-[#3ABEF9]"
+                class="nav-item relative inline-block no-underline hover:text-[#3ABEF9]"
               >
                 Projects
               </button>
@@ -103,7 +103,7 @@ onMounted(() => {
             <li>
               <button
                 @click="scrollTo('contact')"
-                class="relative inline-block no-underline hover:text-[#3ABEF9]"
+                class="nav-item relative inline-block no-underline hover:text-[#3ABEF9]"
               >
                 Contact
               </button>
@@ -116,20 +116,6 @@ onMounted(() => {
 </template>
 
 <style scoped>
-button:after {
-  background: transparent;
-  bottom: 0;
-  content: '';
-  display: block;
-  height: 2px;
-  transform: scaleX(0);
-  background: #3abef9;
-  transition: transform 0.3s ease-in-out;
-}
-button:hover:after {
-  transform: scaleX(1);
-}
-
 .slide-down-enter-active,
 .slide-down-leave-active {
   transition: all 0.7s ease;

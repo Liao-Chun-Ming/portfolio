@@ -24,19 +24,19 @@ onMounted(() => {
     <div class="flex flex-col sm:flex-row justify-between gap-4 text-xl">
       <button
         @click="scrollTo('about')"
-        class="relative inline-block no-underline text-white hover:text-[#3ABEF9]"
+        class="nav-item relative inline-block no-underline text-white hover:text-[#3ABEF9]"
       >
         About
       </button>
       <button
         @click="scrollTo('projects')"
-        class="relative inline-block no-underline text-white hover:text-[#3ABEF9]"
+        class="nav-item relative inline-block no-underline text-white hover:text-[#3ABEF9]"
       >
         Projects
       </button>
       <button
         @click="scrollTo('contact')"
-        class="relative inline-block no-underline text-white hover:text-[#3ABEF9]"
+        class="nav-item relative inline-block no-underline text-white hover:text-[#3ABEF9]"
       >
         Contact
       </button>
@@ -46,19 +46,3 @@ onMounted(() => {
     </aside>
   </footer>
 </template>
-
-<style scoped>
-button:after {
-  background: transparent;
-  bottom: 0;
-  content: '';
-  display: block;
-  height: 2px;
-  transform: scaleX(0);
-  background: #3abef9;
-  transition: transform 0.3s ease-in-out;
-}
-button:hover:after {
-  transform: scaleX(1);
-}
-</style>

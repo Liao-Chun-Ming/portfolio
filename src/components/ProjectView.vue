@@ -96,7 +96,7 @@ onMounted(() => {
     <div class="project-card w-full bg-[#1f1f1f] rounded-xl px-6 py-12 lg:p-12">
       <h2 class="text-white text-4xl font-semibold text-start mb-5">Project Showcase</h2>
       <a
-        href="https://github.com/monky6503?tab=repositories"
+        href="https://github.com/Liao-Chun-Ming"
         target="_blank"
         class="relative btn gitbtn border-none bg-white text-black text-sm rounded-full px-3 py-2 mb-5 inline-flex items-center justify-center gap-2 z-10"
       >
