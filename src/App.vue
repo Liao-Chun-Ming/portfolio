@@ -28,4 +28,19 @@ setTimeout(function () {
 body {
   overflow-x: hidden;
 }
+
+.nav-item:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  height: 2px;
+  width: 100%;
+  transform: translateX(-50%) scaleX(0);
+  background-color: #3abef9;
+  transition: transform 0.3s ease-in-out;
+}
+.nav-item:hover:after {
+  transform: translateX(-50%) scaleX(1);
+}
 </style>
