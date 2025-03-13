@@ -1,21 +1,21 @@
 <script setup>
-import { ref, onMounted } from 'vue'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-import html5 from '@/assets/html5.svg'
-import css3 from '@/assets/css3.svg'
-import javascript from '@/assets/javascript.svg'
-import bootstrap from '@/assets/bootstrap.svg'
-import scss from '@/assets/sass.svg'
-import tailwind from '@/assets/tailwindcss.svg'
-import vuejs from '@/assets/vuejs.svg'
-import pinia from '@/assets/pinia.svg'
-import python from '@/assets/python.svg'
-import rstudio from '@/assets/rstudioide.svg'
-import tableau from '@/assets/tableau.svg'
-import git from '@/assets/git.svg'
-import firebase from '@/assets/firebase.svg'
-import codebg from '@/assets/codebg.jpeg'
+import { ref, onMounted } from 'vue';
+import 'aos/dist/aos.css';
+import html5 from '@/assets/html5.svg';
+import css3 from '@/assets/css3.svg';
+import javascript from '@/assets/javascript.svg';
+import bootstrap from '@/assets/bootstrap.svg';
+import scss from '@/assets/sass.svg';
+import tailwind from '@/assets/tailwindcss.svg';
+import vuejs from '@/assets/vuejs.svg';
+import pinia from '@/assets/pinia.svg';
+import python from '@/assets/python.svg';
+import rstudio from '@/assets/rstudioide.svg';
+import tableau from '@/assets/tableau.svg';
+import git from '@/assets/git.svg';
+import firebase from '@/assets/firebase.svg';
+import gitlab from '@/assets/gitlab.svg';
+import lottie from 'lottie-web';
 
 const tools = [
   {
@@ -82,32 +82,48 @@ const tools = [
       {
         name: 'Tableau',
         img: tableau
+      },
+      {
+        name: 'GitLab',
+        img: gitlab
       }
     ]
   }
-]
-const mobile = ref(null)
+];
+const mobile = ref(null);
+const codeRef = ref(null);
 const checkScreen = () => {
-  const windowWidth = window.innerWidth
+  const windowWidth = window.innerWidth;
   if (windowWidth < 768) {
-    mobile.value = true
-    return
+    mobile.value = true;
+    return;
   }
-  mobile.value = false
-}
+  mobile.value = false;
+};
+
+const loadAnimation = (codeRef) => {
+  lottie.loadAnimation({
+    container: codeRef.value,
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'code.json'
+  });
+};
+
 onMounted(() => {
-  checkScreen()
-  window.addEventListener('resize', checkScreen)
-  AOS.init()
-})
+  checkScreen();
+  window.addEventListener('resize', checkScreen);
+  loadAnimation(codeRef);
+});
 </script>
 
 <template>
-  <section class="mb-10" id="about">
-    <h2 class="text-4xl font-semibold text-center pb-8">About</h2>
+  <section class="text-[#212529] mb-10" id="about">
+    <h2 class="text-4xl font-semibold pb-8">About</h2>
     <div class="card xl:card-side gap-10">
       <figure>
-        <img :src="codebg" alt="Album" class="rounded-full" />
+        <div ref="codeRef"></div>
       </figure>
       <div class="card-body">
         <h3 class="card-title text-3xl mb-2">Develop Tool</h3>
@@ -119,7 +135,7 @@ onMounted(() => {
           >
             <h4 class="uppercase text-center mb-2">{{ item.category }}</h4>
             <hr class="w-full h-1 mx-auto rounded-md bg-black" />
-            <div class="w-full flex flex-row md:flex-col gap-4 flex-wrap py-4">
+            <div class="w-full max-h-80 flex flex-row md:flex-col gap-4 flex-wrap py-4">
               <div v-for="(tool, index) in item.content" :key="index" class="flex items-center">
                 <div class="flex items-center justify-center gap-3">
                   <img :src="tool.img" alt="" class="w-10" />
@@ -149,7 +165,7 @@ onMounted(() => {
                 >Figma UI/UX and Vue.js Front-End Training Course</span
               >
               <span
-                class="order-1 sm:order-2 bg-blue-100 text-blue-800 text-sm font-medium sm:ml-2 px-2.5 py-0.5 rounded"
+                class="order-1 sm:order-2 bg-blue-100 text-blue-800 text-sm font-medium sm:ml-2 px-2.5 py-0.5 rounded-sm"
                 >Latest
               </span>
             </h4>
@@ -221,13 +237,11 @@ onMounted(() => {
           </li>
         </ol>
       </div>
-      <!-- <figure>
-        <img :src="codebg" alt="Album" class="h-full object-cover" />
-      </figure> -->
     </div>
-    <hr class="w-full h-[2px] bg-gray-300 my-10" />
+    <hr class="w-full h-0.5 bg-gray-300 my-10" />
   </section>
 </template>
+
 <style scoped>
 .custom-list {
   list-style-type: none;

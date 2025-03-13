@@ -1,6 +1,6 @@
 <script setup>
-import HeaderView from '@/components/HeaderView.vue'
-import MainView from '@/components/MainView.vue'
+import HeaderView from '@/views/Home/Child/HeaderView.vue';
+import MainView from '@/views/Home/Child/MainView.vue';
 </script>
 
 <template>

@@ -1,10 +1,10 @@
 <script setup>
-import { ref, onMounted } from 'vue'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-import VanillaTilt from 'vanilla-tilt'
+import { ref, onMounted } from 'vue';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import VanillaTilt from 'vanilla-tilt';
 
-const projectdata = [
+const projectData = [
   {
     name: 'Fengyuan Bus Transportation',
     intro:
@@ -75,11 +75,11 @@ const projectdata = [
       { package: 'Firebase', color: '#DD2C00' }
     ]
   }
-]
-const cardElement = ref(null)
+];
+const cardElement = ref(null);
 
 onMounted(() => {
-  AOS.init()
+  AOS.init();
   VanillaTilt.init(cardElement.value, {
     reverse: true,
     max: 15,
@@ -87,8 +87,8 @@ onMounted(() => {
     glare: true,
     'max-glare': 0.3,
     easing: 'cubic-bezier(.03,.98,.52,.99)'
-  })
-})
+  });
+});
 </script>
 
 <template>
@@ -105,11 +105,11 @@ onMounted(() => {
         <i class="fa-solid fa-arrow-right mx-2"></i
       ></a>
       <div
-        class="w-full grid grid-cols-1 lg:grid-cols-2 3xl:grid-cols-4 justify-center gap-10 text-white"
+        class="w-full grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 justify-center gap-10 text-white"
       >
         <div
           ref="cardElement"
-          v-for="(item, index) in projectdata"
+          v-for="(item, index) in projectData"
           :key="index"
           class="px-5 py-8 bg-[#282828] border border-[#484848] rounded-2xl flex flex-col justify-between"
           data-aos="zoom-in"
@@ -144,6 +144,7 @@ onMounted(() => {
     </div>
   </section>
 </template>
+
 <style scoped>
 .gitbtn::after {
   position: absolute;

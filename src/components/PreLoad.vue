@@ -1,23 +1,23 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted } from 'vue';
 
-const counter = ref(0)
-const percent = ref(0)
-const interValid = ref(null)
+const counter = ref(0);
+const percent = ref(0);
+const interValid = ref(null);
+
+onMounted(() => {
+  startCounter();
+});
 
 const startCounter = () => {
   interValid.value = setInterval(() => {
-    percent.value = counter.value
-    counter.value++
+    percent.value = counter.value;
+    counter.value++;
     if (counter.value === 101) {
-      clearInterval(interValid.value)
+      clearInterval(interValid.value);
     }
-  }, 15)
-}
-
-onMounted(() => {
-  startCounter()
-})
+  }, 15);
+};
 </script>
 <template>
   <div class="preload">

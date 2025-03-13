@@ -1,5 +1,6 @@
 <script setup>
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
+
 const copyEmail = (e) => {
   if (navigator.clipboard) {
     navigator.clipboard
@@ -9,27 +10,27 @@ const copyEmail = (e) => {
           icon: 'success',
           title: 'Copied!!',
           text: e.target.innerText
-        })
+        });
       })
       .catch((error) => {
         Swal.fire({
           icon: 'error',
           title: 'Oops...',
           text: error
-        })
-      })
+        });
+      });
   } else {
     Swal.fire({
       icon: 'question',
       title: 'Oops...',
       text: 'Your browser does not support this feature, please copy it manually.'
-    })
+    });
   }
-}
+};
 </script>
 
 <template>
-  <section id="contact">
+  <section id="contact" class="text-[#212529]">
     <h2 class="text-4xl font-semibold text-start pt-10 pb-5">Contact me</h2>
     <h3 class="text-2xl">Interested In ? You can contact me or follow me.</h3>
     <h3 class="text-2xl pb-8">Let's work together!!</h3>
@@ -49,10 +50,6 @@ const copyEmail = (e) => {
       <div class="flex items-center justify-center">
         <i class="fa-brands fa-github"></i>
         <p>：<a href="https://github.com/Liao-Chun-Ming" target="_blank">My Github</a></p>
-      </div>
-      <div class="flex items-center justify-center">
-        <i class="fa-brands fa-linkedin"></i>
-        <p>：<a href="https://www.linkedin.com/in/chunming1018/" target="_blank">My LinkIn</a></p>
       </div>
       <div class="flex items-center justify-center">
         <i class="fa-solid fa-location-dot"></i>
